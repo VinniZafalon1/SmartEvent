@@ -1,30 +1,22 @@
-import { createRouter, createWebHistory } from '@ionic/vue-router';
+import { createRouter, createWebHistory } from '@ionic/vue-router'
 
-import TabsPage from '../views/TabsPage.vue'
-import HomePage from '../views/HomePage.vue'
-import EventosPage from '../views/EventosPage.vue'
-import EventoDetalhePage from '../views/EventoDetalhePage.vue'
-import FavoritosPage from '../views/FavoritosPage.vue'
-import PerfilPage from '../views/PerfilPage.vue'
+import Login from '../views/Login.vue'
+import Home from '../views/Home.vue'
+import Cadastro from '../views/Cadastro.vue'
+import Recuperar from '../views/RecuperarSenha.vue'
+import Detalhes from '../views/DetalhesLivro.vue'
 
 const routes = [
-  {
-    path: '/',
-    component: TabsPage,
-    children: [
-      { path: '', redirect: '/home' },
-      { path: 'home', component: HomePage },
-      { path: 'eventos', component: EventosPage },
-      { path: 'detalhe/:id', component: EventoDetalhePage },
-      { path: 'favoritos', component: FavoritosPage },
-      { path: 'perfil', component: PerfilPage }
-    ]
-  }
+  { path: '/', component: Login },
+  { path: '/home', component: Home },
+  { path: '/cadastro', component: Cadastro },
+  { path: '/recuperar', component: Recuperar },
+  { path: '/detalhes/:id', component: Detalhes }
 ]
 
 const router = createRouter({
-  history: createWebHistory( ),
-  routes 
+  history: createWebHistory(),
+  routes
 })
 
 export default router
