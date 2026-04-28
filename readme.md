@@ -8,41 +8,21 @@ Vinicius Pamplona Zafalon
 
 ## 📖 Descrição do Projeto
 
-Este projeto consiste no desenvolvimento de um aplicativo mobile utilizando Ionic Framework com Vue.js 3, com foco na construção das interfaces (UI).
+Este projeto consiste no desenvolvimento de um aplicativo mobile utilizando Ionic Framework com Vue.js 3, com foco exclusivo na construção das interfaces (UI).
 
-O aplicativo simula um sistema de gerenciamento de livros favoritos, permitindo ao usuário navegar entre telas de login, cadastro, recuperação de senha, lista de livros e detalhes de cada livro.
+O aplicativo simula um sistema de livros favoritos (série Harry Potter), permitindo navegação entre telas de login, cadastro, recuperação de senha, listagem de livros e visualização de detalhes.
 
-Os dados utilizados são simulados, sem integração com banco de dados ou APIs externas.
+Todos os dados são simulados, sem uso de banco de dados ou APIs.
 
 ---
 
 ## 📱 Telas Desenvolvidas
 
-* 🔐 **Tela de Login**
-
-  * Entrada com e-mail e senha
-  * Navegação para cadastro e recuperação de senha
-
-* 📝 **Tela de Cadastro**
-
-  * Campos: nome, e-mail, senha e confirmação de senha
-  * Validação de campos e redirecionamento
-
-* 🔑 **Tela de Recuperação de Senha**
-
-  * Campo de e-mail
-  * Simulação de envio de recuperação
-
-* 📚 **Tela Home (Lista de Livros)**
-
-  * Lista de livros favoritos (Harry Potter)
-  * Exibição de título e autor
-  * Navegação para detalhes
-
-* 📖 **Tela de Detalhes do Livro**
-
-  * Exibição de título, autor, descrição e imagem
-  * Dados mockados
+* 🔐 Login
+* 📝 Cadastro
+* 🔑 Recuperação de Senha
+* 📚 Lista de Livros (Home)
+* 📖 Detalhes do Livro
 
 ---
 
@@ -58,31 +38,71 @@ Os dados utilizados são simulados, sem integração com banco de dados ou APIs 
 
 ## 🚀 Como Rodar o Projeto
 
-1. Instale as dependências:
+### 🔧 Pré-requisitos
+
+Antes de começar, você precisa ter instalado:
+
+* Node.js (versão recomendada: 16 ou superior)
+* npm (geralmente já vem com o Node)
+* Ionic CLI
+
+---
+
+### 📥 1. Clonar o repositório
+
+```bash
+git clone https://github.com/VinniZafalon1/SmartEvent.git
+```
+
+---
+
+### 📂 2. Acessar a pasta do projeto
+
+```bash
+cd nome-do-projeto
+```
+
+---
+
+### 📦 3. Instalar as dependências
 
 ```bash
 npm install
 ```
 
-2. Execute o projeto:
+---
+
+### ▶️ 4. Executar o projeto
 
 ```bash
 ionic serve
 ```
 
-3. Acesse no navegador:
+---
 
-```
+### 🌐 5. Acessar no navegador
+
+O projeto será aberto automaticamente, mas caso não abra:
+
+```text
 http://localhost:8100
 ```
 
 ---
 
-## 📌 Observações
+### 📱 Observações
 
-* Projeto desenvolvido apenas com foco em frontend
-* Não utiliza banco de dados
-* Dados simulados com arrays e reactive/ref
-* Utilização de componentes do Ionic
+* O projeto roda no navegador simulando um app mobile
+* Pode ser testado também no modo responsivo (F12 → mobile view)
+* Não há necessidade de backend ou banco de dados
+
+---
+
+## 📌 Observações Finais
+
+* Projeto focado apenas em frontend
+* Dados simulados com `ref()` e arrays
+* Navegação utilizando Vue Router
+* Uso de componentes do Ionic
 
 ---
