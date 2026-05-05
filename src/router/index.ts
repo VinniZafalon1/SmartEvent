@@ -8,6 +8,7 @@ import Detalhes from '../views/DetalhesLivro.vue'
 
 const routes = [
   { path: '/', component: Login },
+  { path: '/login', component: Login },
   { path: '/home', component: Home },
   { path: '/cadastro', component: Cadastro },
   { path: '/recuperar', component: Recuperar },

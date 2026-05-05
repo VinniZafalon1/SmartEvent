@@ -2,6 +2,10 @@
   <ion-page>
     <ion-content class="ion-padding">
 
+            <ion-button fill="clear" @click="$router.push('/home')">
+        Voltar para Home
+      </ion-button>
+
       <ion-card v-if="livro">
         <img :src="livro.imagem" />
 

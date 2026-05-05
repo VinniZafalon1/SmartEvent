@@ -2,6 +2,10 @@
   <ion-page>
     <ion-content class="ion-padding">
 
+      <ion-button fill="clear" @click="$router.push('/login')">
+        Voltar para Login
+      </ion-button>
+
       <h2>Livros Favoritos</h2>
 
       <ion-list>

@@ -1,6 +1,11 @@
 <template>
   <ion-page>
     <ion-content class="ion-padding">
+
+      <ion-button fill="clear" @click="$router.push('/login')">
+        Voltar para Login
+      </ion-button>
+
       <h2>Recuperar Senha</h2>
 
       <ion-input v-model="email" placeholder="E-mail"></ion-input>
@@ -51,9 +56,7 @@ ion-button {
 
 /* Centraliza na tela */
 ion-content::part(scroll) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-color: rgb(53, 53, 53);
 }
 
 </style>
